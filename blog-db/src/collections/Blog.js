@@ -61,7 +61,14 @@ const Blog = {
             required: true,
         },
         {
-            name: 'description',
+            name: 'author',
+            label: 'Author',
+            type: 'text',
+            required: true
+        },
+        {
+            name: 'isi',
+            label: 'Isi Blog',
             type: 'text',
             required: true
         },
@@ -71,7 +78,8 @@ const Blog = {
             type: 'text'
         },
         {
-            name: "timestamp",
+            name: "date",
+            label: 'Date',
             type: "date",
             required: true
         }

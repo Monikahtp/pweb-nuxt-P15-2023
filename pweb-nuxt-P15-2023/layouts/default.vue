@@ -19,26 +19,17 @@
                   <RouterLink to="#" class="logo m-0 float-start">Sumut Foods<span class="text-primary">.</span></RouterLink>
                 </div>
                 <div class="col-8 text-center">
-                  <form action="#" class="search-form d-inline-block d-lg-none">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <span class="bi-search"></span>
-                  </form>
 
                   <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
                     <li><RouterLink to="/">Home</RouterLink></li>
-                    <li><RouterLink to="/blog">Blog</RouterLink></li>
+                    <li><RouterLink to="/blogs">Blog</RouterLink></li>
                     <li><RouterLink to="/about">About</RouterLink></li>
-                    <li><RouterLink to="/contact">Contact Us</RouterLink></li>
                   </ul>
                 </div>
                 <div class="col-2 text-end">
                   <RouterLink to="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
                     <span></span>
                   </RouterLink>
-                  <form action="#" class="search-form d-none d-lg-inline-block">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <span class="bi-search"></span>
-                  </form>
                 </div>
               </div>
             </div>
@@ -64,68 +55,15 @@
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
 				<div class="col-lg-4 ps-lg-5">
-					<div class="widget">
-						<h3 class="mb-4">Company</h3>
-						<ul class="list-unstyled float-start links">
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Vision</a></li>
-							<li><a href="#">Mission</a></li>
-							<li><a href="#">Terms</a></li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						<ul class="list-unstyled float-start links">
-							<li><a href="#">Partners</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Creative</a></li>
-						</ul>
-					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
 				<div class="col-lg-4">
 					<div class="widget">
-						<h3 class="mb-4">Recent Post Entry</h3>
-						<div class="post-entry-footer">
-							<ul>
-								<li>
-									<a href="">
-										<img src="~/assets/images/bikaambon.jpg" alt="Image placeholder" class="me-4 rounded">
-										<div class="text">
-											<h4>Bika Ambon</h4>
-											<div class="post-meta">
-												<span class="mr-2">November 15, 2023 </span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="~/assets/images/daunubi.jpeg" alt="Image placeholder" class="me-4 rounded">
-										<div class="text">
-											<h4>Daun Ubi Tumbuk</h4>
-											<div class="post-meta">
-												<span class="mr-2">November 26, 2023 </span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="">
-										<img src="~/assets/images/arsik.png" alt="Image placeholder" class="me-4 rounded">
-										<div class="text">
-											<h4>Ikan Arsik</h4>
-											<div class="post-meta">
-												<span class="mr-2">November 29, 2023 </span>
-											</div>
-										</div>
-									</a>
-								</li>
-							</ul>
-						</div>
-
-
+						<h3 class="mb-4">Page</h3>
+						<ul class="list-unstyled float-start links">
+							<li><a href="/">Home</a></li>
+							<li><a href="/blogs">Blog</a></li>
+							<li><a href="/about">About</a></li>
+						</ul>
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
 			</div> <!-- /.row -->
