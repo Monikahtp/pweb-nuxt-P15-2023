@@ -16,7 +16,7 @@
             <div class="site-navigation">
               <div class="row g-0 align-items-center">
                 <div class="col-2">
-                  <RouterLink to="#" class="logo m-0 float-start">Sumut Foods<span class="text-primary">.</span></RouterLink>
+                  <RouterLink to="/" class="logo m-0 float-start">Sumut Foods<span class="text-primary">.</span></RouterLink>
                 </div>
                 <div class="col-8 text-center">
 

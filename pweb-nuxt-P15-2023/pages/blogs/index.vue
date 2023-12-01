@@ -18,7 +18,7 @@
           <div class="blog-entry d-flex blog-entry-search-item">
             <RouterLink to="/single" class="img-link me-4">
               <img v-if="b.image" :src="b.image" alt="Image" class="img-fluid" style="width: 400px; height: 200px;">
-              <img v-else src="~/assets/images/bikaambon.jpg" alt="Default Image" class="img-fluid" style="width: 400px; height: 200px;">
+              <img v-else src="~/assets/images/no-photo-available.png" alt="Default Image" class="img-fluid" style="width: 400px; height: 200px;">
             </RouterLink>
             <div>
               <span class="date">{{ new Date(b.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) }} &bullet; <RouterLink to="#">Food</RouterLink></span>

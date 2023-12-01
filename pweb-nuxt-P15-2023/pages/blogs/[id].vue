@@ -28,10 +28,10 @@
         <div class="col-md-12 col-lg-8 main-content">
           <div class="post-content-body">
 
-            <div class="row my-4">
+            <div class="row my-4" v-if="blog.image">
               <div class="col-md-12 mb-4">
                 <img :src="blog.image" alt="Image placeholder" class="img-fluid rounded" v-if="blog.image">
-                <img src="~/assets/images/bikaambon.jpg" alt="Image placeholder" class="img-fluid rounded" v-else>
+                <!-- <img src="~/assets/images/no-photo-available.png" alt="Image placeholder" class="img-fluid rounded" v-else> -->
               </div>
 
             </div>
