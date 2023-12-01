@@ -7,7 +7,7 @@
     <transition name="fade-slide" appear>
       <div class="flex text-center open">
         <h1 class="judul">Welcome To Our Blogs</h1>
-        <p class="desc">Please Enjoy Our Blogsite</p>
+        <p class="desc">Enjoy Our Blogsite</p>
         <p><RouterLink to="/blogs" class="btn btn-sm btn-outline-primary">To Blogs</RouterLink></p>
       </div>
     </transition>
@@ -15,32 +15,7 @@
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
-  data() {
-    return {
-      blog: [],
-      showComponent: false, // Add a data property for controlling animation
-    };
-  },
-  methods: {
-    async tarik() {
-      await axios.get('http://localhost:3100/api/Blog')
-        .then(response => {
-          this.blog = response.data.docs;
-          console.log(this.blog);
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-    },
-  },
-  async created() {
-    await this.tarik();
-    this.showComponent = true; // Set showComponent to true after data is loaded
-    console.log(this.blog.length);
-  },
 };
 </script>
 
@@ -56,7 +31,7 @@ export default {
 
 .judul{
   color: #214252ff;
-  font-size: 72px;
+  font-size: 68px;
 }
 
 .open {

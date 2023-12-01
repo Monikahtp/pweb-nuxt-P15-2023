@@ -59,7 +59,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import axios from 'axios';
 
 export default {
@@ -76,11 +76,10 @@ export default {
         .then(response => {
           // Assign the fetched data to the todoList array
           this.blog = response.data;
-          console.log(this.blog.author)
           // console.log(this.taskData[0])
         })
         .catch(error => {
-          console.error('Error fetching data:', error);
+          console.log(error)
         });
       
       // console.log("di dalam retrieve", this.taskData)
@@ -88,11 +87,30 @@ export default {
   },
   async created () {
     await this.retrieveFormData();
-    const {id} = useRoute().params
-    console.log('http://localhost:3100/api/blog/' + id)
+    if (this.blog==null){
+      console.log("jalan");
+      throw createError({ statusCode: 404, statusMessage: 'Blogs Not Found'})
+    }
   },
 };
+</script> -->
+
+<script setup>
+  const {id} = useRoute().params
+  const url = 'http://localhost:3100/api/blog/' + id
+  const {data: blog} = await useFetch(url, {key: id})
+
+  if (!blog.value){
+    throw createError({ statusCode: 404, statusMessage: 'Blogs Not Found'})
+  }
 </script>
+
+// <!-- <script setup>
+//     if (this.blog==null){
+//       console.log("jalan");
+//       throw createError({ statusCode: 404, statusMessage: 'Blogs Not Found'})
+//     }
+// </script> -->
 
 <style>
 .head{
